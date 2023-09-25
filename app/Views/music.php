@@ -70,7 +70,7 @@
         <div class="modal-body">
           <br>
 
-              <a href="/playlist/" data-bs-toggle = "modal" data-bs-target ="#myModal">your playlist</a>
+              <a href="/playlists/" data-bs-toggle = "modal" data-bs-target ="#myModal">your playlist</a>
               <br>
 
 
@@ -111,7 +111,7 @@
         <?php endforeach; ?>
 <?php else: ?>
     <?php foreach ($music as $m): ?>
-      <li data-src="<?= base_url(); ?>/music/<?= $m['musicname'];?>.mp3"><?= $m['musicname']; ?>
+      <li data-src="<?= base_url(); ?>/music/<?= $m ['musicname'];?>.mp3"><?= $m['musicname']; ?>
       <a href="/addtoplaylist" class="hover-effect">
           <i class="fa-solid fa-plus"></i>
       </a></li>

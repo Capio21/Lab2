@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class MusikoModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'tblmus';
+    protected $table            = 'playlists';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['playlist'];
+    protected $allowedFields    = ['playlists'];
 
     // Dates
     protected $useTimestamps = false;
