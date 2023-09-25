@@ -14,7 +14,7 @@
     body {
          font-family: Arial, sans-serif;
          text-align: center;
-         background-color: #f5f5f5;
+         background-color: #567678f5;
          padding: 20px;
      }
 
@@ -133,9 +133,9 @@
           <form action="/" method="post">
             <!-- <p id="modalData"></p> -->
             <input type="hidden" id="musicID" name="musicID">
-            <select  name="playlist" class="form-control" id ="playlist">
+            <select  name="playlists" class="form-control" id ="playlists">
             <?php foreach($plays as $play): ?>
-              <option value="playlist"><?=$play['playlist']?></option>
+              <option value="playlists"><?=$play['playlists']?></option>
             <?php endforeach;?>
             </select>
             <input type="submit" name="add">
@@ -200,7 +200,7 @@
           <form action="/createplaylist " method="post">
             <!-- <p id="modalData"></p> -->
             <input type="hidden" id="musicID" name="musicID">
-          <input type="text" name = "playlist" placeholder="create playlist">
+          <input type="text" name = "playlists" placeholder="create playlist">
           <input type="submit">
             </form>
           </div>
